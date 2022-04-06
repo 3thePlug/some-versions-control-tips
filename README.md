@@ -46,6 +46,41 @@ En algunos casos ambas numeraciones se combinan. Por ejemplo se está desarrolla
 partir de la 2.0.5 y para el software de control de versiones (se toma como ejemplo Subversion) la
 última versión es la 671. Entonces la versión de desarrlollo podría ser la 2.0.5-svn671.
 
+## 2. ¿Cómo se organizan los documentos dentro de la copia de trabajo?
+
+Los documentos sujetos al control de versiones deben estar organizados de un modo determinado. No
+sirve utilizar un directorio distinto para cada versión porque se supone que el control de versiones es
+automático.
+
+La estructura de documentos suele dividirse en tres grandes directorios llamados trunk, branches y tags.
+
+## 2.1. El directorio trunk
+
+El directorio trunk o tronco es el que marca el desarrollo del proyecto, la versión principal. En proyectos
+pequeños en los que sólo hay una rama, ésta es el tronco. Es un criterio bastante común que contenido
+del tronco del repositorio, que no el de la copia de trabajo, sea funcional. Por ello se entiende que en el
+caso de documentación no haya ninguna sección a medias o en el caso de código que todo compile y/o
+funcione.
+
+## 2.2. El directorio branches
+
+El directorio branches o ramas es el que contiene todas las derivaciones del proyecto que contiene el
+tronco y que no pueden convivir en la rama principal.
+
+Por ejemplo, supóngase que varias personas están escribiendo esta documentación a la vez y que el
+formato de la fuente del documento es docbook. Uno de los autores decide migrar el documento a LaTeX
+porque contiene muchas más fórmulas de lo que se esperaba en un principio. El proyecto escrito en
+docbook seguirá viviendo en trunk mientras que para el documento escrito en LaTeX se creará una nueva
+rama en el directorio branches. Cuando el nuevo proyecto supere en funcionalidades al antiguo puede
+que abandone branches para pasar a ser trunk.
+
+## 2.3. El directorio tags
+
+Tag podría traducirse (aunque no literalmente) por galón o hito. Cuando la versión trunk llega a una
+versión mayor o menor, es dercir, un estado en el que podría recibir el calificativo de completa; pasa al
+directorio tags. En él no se realizan cambios, es un almacén donde se guardan algunas versiones de valor
+histórico.
+
 ## SOME TIPS FOR VERSION CONTROL
 
 --ENGLISH VERSION (SOON)--
