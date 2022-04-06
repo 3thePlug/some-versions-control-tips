@@ -1,4 +1,4 @@
---Versión español--
+--VERSIÓN ESPAÑOL--
 
 ## ALGUNOS APUNTES PARA EL CONTROL DE VERSIONES
 
@@ -41,13 +41,14 @@ Un método de numeración compatible con el anterior es numerar las versiones me
 decimal. La primera versión es la 1, la segundo es la 2 y así sucesivamente. Esta numeración suele
 utilizarse en el desarrollo cuando el control de versiones se lleva de forma automática mediante algún
 programa de control de versiones.
+
 En algunos casos ambas numeraciones se combinan. Por ejemplo se está desarrollando la versión 2.1 a
 partir de la 2.0.5 y para el software de control de versiones (se toma como ejemplo Subversion) la
 última versión es la 671. Entonces la versión de desarrlollo podría ser la 2.0.5-svn671.
 
---ENGLISH VERSION (SOON)
-
 ## SOME TIPS FOR VERSION CONTROL
+
+--ENGLISH VERSION (SOON)--
 
 Soon I will update this.
 
